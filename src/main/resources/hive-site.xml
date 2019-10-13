@@ -4,7 +4,7 @@
 <configuration>
   <property>
     <name>hive.metastore.uris</name>
-    <value>thrift://cdh01.huacloud.com:9083</value>
+    <value>thrift://master.hadoop.com:9083</value>
   </property>
   <property>
     <name>hive.metastore.client.socket.timeout</name>
@@ -140,23 +140,23 @@
   </property>
   <property>
     <name>spark.executor.memory</name>
-    <value>15935366758</value>
+    <value>2717319168</value>
   </property>
   <property>
     <name>spark.driver.memory</name>
-    <value>11596411699</value>
+    <value>966367641</value>
   </property>
   <property>
     <name>spark.executor.cores</name>
-    <value>6</value>
+    <value>4</value>
   </property>
   <property>
     <name>spark.yarn.driver.memoryOverhead</name>
-    <value>1228</value>
+    <value>102</value>
   </property>
   <property>
     <name>spark.yarn.executor.memoryOverhead</name>
-    <value>2681</value>
+    <value>457</value>
   </property>
   <property>
     <name>spark.dynamicAllocation.enabled</name>
@@ -184,7 +184,7 @@
   </property>
   <property>
     <name>hive.zookeeper.quorum</name>
-    <value>cdh01.huacloud.com</value>
+    <value>master.hadoop.com,slave2.hadoop.com,slave1.hadoop.com</value>
   </property>
   <property>
     <name>hive.zookeeper.client.port</name>
@@ -193,14 +193,6 @@
   <property>
     <name>hive.zookeeper.namespace</name>
     <value>hive_zookeeper_namespace_hive</value>
-  </property>
-  <property>
-    <name>hbase.zookeeper.quorum</name>
-    <value>cdh01.huacloud.com</value>
-  </property>
-  <property>
-    <name>hbase.zookeeper.property.clientPort</name>
-    <value>2181</value>
   </property>
   <property>
     <name>hive.cluster.delegation.token.store.class</name>
